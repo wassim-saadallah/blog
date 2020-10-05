@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <title>Console</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    body {
+      background-color: black;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .console-container {
+      margin: 2rem;
+      position: sticky;
+    }
+
+    .cursorSpan {
+      width: 1rem;
+      height: 1rem;
+      color: white;
+      animation: blink .5s infinite alternate;
+    }
+
+    @keyframes blink {
+      from {
+        color: white;
+      }
+
+      to {
+        color: black;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="console-container">
+    <div id="console"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
